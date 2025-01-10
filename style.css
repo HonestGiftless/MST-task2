@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Asgard Trial";
+  font-size: 70px;
+  font-weight: bold;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  background: black;
+  z-index: 2;
+  mix-blend-mode: darken;
+}
+
+.main-container .default {
+  color: #000;
+}
+
+.main-container .transparent {
+  position: relative;
+  font-size: 40px;
+  background: #fff;
+  color: #fff;
+  word-wrap: normal;
+  white-space: nowrap;
+
+  z-index: 100;
+}
+
+.text-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.text-container .default {
+  color: #ffffff;
+}
+
+.text-container .transparent {
+  position: relative;
+  font-size: 40px;
+  background: transparent;
+  color: transparent;
+  word-wrap: normal;
+  white-space: nowrap;
+  z-index: 100;
+}
